@@ -1,0 +1,54 @@
+<HTML>
+<head>Jarvik Heart, Inc.</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<h2>WO Register - Manual Entry</h2>
+
+<form href="#" method="post">
+
+	<ul>
+		<li>
+			<label for="wo_num">Work Order</label>
+			<input type="number" name="wo_num">
+		</li>
+		<li>
+			<label for="op_num">Operation number</label>
+			<input type="number" name="op_num">
+		</li>
+		<li>
+			<label for="user_id"></label>
+			<select name="user_id">
+				<option value ="1">Carl</option>
+				<option value ="2">Chaz</option>
+				<option value ="3">Alyssa</option>
+				<option value ="4">Rob</option>
+				<option value ="5">Alani</option>
+				<option value ="6">Jeff</option>
+				<option value ="7">Shelby</option>
+				<option value ="8">Other</option>
+			</select>
+		</li>
+		<li>
+			<label for="qty">Quantity</label>
+			<input type="number" name="qty">
+		</li>
+		<li>
+			<label for="start_datetime">Start Date/Time</label>
+			<input type="datetime-local" name="start_datetime">
+		</li>
+		<li>
+			<label for="stop_datetime">Stop Date/Time</label>
+			<input type="datetime-local" name="stop_datetime">
+		</li>
+		<li>
+			<label for="notes">Notes (optional)</label>
+			<input type="text" name="notes">
+		</li>
+	</ul>
+
+	<input type="submit" value="SUBMIT">
+
+</form>
+<link href="styles.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</body>

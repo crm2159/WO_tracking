@@ -1,0 +1,178 @@
+ul{
+	list-style-type:none;
+}
+
+}table {
+	word-wrap: break-word;
+	table-layout: fixed;
+}
+label{
+	width:200px;
+}
+
+.ui-autocomplete {
+    z-index: 5000;
+}
+
+#msg{
+
+	padding: 2px; 
+	margin: 0px; 
+	color: lightgrey;
+	background: black; 
+	border-radius: 0px 0px 5px 5px;
+	position: absolute;
+	display:none
+}
+
+body {
+  padding-top: 50px;
+}
+#doc-request-form{
+	text-align: left;
+}
+
+#doc-request-form ul{
+	list-style-type: none;
+	font-weight: bold;
+}
+
+#doc-request-form input{
+	min-width:200px;
+}
+
+#doc-request-form textarea{
+	
+	min-height:75px;
+}
+
+* {
+    font-family: arial
+}
+
+label.prefix {
+    display: inline-block;
+    text-align: right;
+    width: 50px;
+}
+
+div#display {
+    background-color: black;
+	color: white;
+	min-height: 40px;
+
+}
+
+button.remove {
+    color: #C4143D
+}
+ul {
+    list-style-type: none;
+    padding-left: 0px 
+	
+}
+li {
+	margin-bottom: 5x;
+	padding: 2px;
+}
+
+#rir_no input {
+    font-weight: 900;
+    width: 50px
+}
+
+.ui-autocomplete {
+    background: #C8CCCA;
+    color: #000000;
+    border
+        
+}
+
+textarea {
+	width: 80%;
+	height: 100px;
+	resize: none;
+	
+}
+
+div.more_info {
+display: inline
+}
+
+label.left-label{
+	width: 170px;
+	text-align:left;
+	vertical-align: top
+}
+
+label.top-label {
+	width: 200px
+}
+
+label.top-left {
+	display: block;
+}
+
+select[multiple] {
+	min-width: 175px;
+}
+
+}
+#system_info  > * input{
+	width: 100px
+}
+
+.power-details  label{
+	padding-left: 15px
+}
+
+input[type=checkbox] {
+	transform: scale(1.5);
+	margin: 0px 15px
+}
+input[type=radio] {
+	transform: scale(1.5);
+}
+
+input[type=date] {
+	width: 175px
+}
+input[type=time] {
+	width: 175px
+}
+
+.help-tip {
+display:none;
+margin-bottom: 5px;
+background-color: #FFFFFF;
+margin-left: 15px
+}
+
+.help-tip > img {
+	width: 50px;
+	opacity: 1.0;
+	background: white
+}
+
+.help-tip > audio {
+width: 215px;
+
+}
+
+.help-tip > table {
+	border: 1px solid black;
+}
+
+td, th {
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px dotted #CCCCCC
+}
+
+input, select, textarea not:input[type="number"]{
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+	box-sizing:content-box;
+	width: 200px;
+}
