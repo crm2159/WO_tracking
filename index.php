@@ -123,30 +123,40 @@ include "resources/init.php";
 <ul>
 	<h3>Enter WO information</h3>
 		<li>
-			<label for="WO_num">Work Order</label>
-			<input type="number" name="WO_num" placeholder="Halllo">
-		</li>
-		<li>
-			<label for="op_num">Operation number</label>
-			<input type="number" name="op_num" placeholder="Halllo">
-		</li>
-		<li>
-			<label for="user_id">Operator</label>
-			<select name="user_id">
-				<option value ="" disabled selected style='display:none;'>Who are you?</option>
-				<option value ="1">Carl</option>
-				<option value ="2">Chaz</option>
-				<option value ="3">Alyssa</option>
-				<option value ="4">Rob</option>
-				<option value ="5">Alani</option>
-				<option value ="6">Jeff</option>
-				<option value ="7">Shelby</option>
-				<option value ="8">Other</option>
+			<label for="Status">Status</label>
+			<select name="Status">
+				<option value ="" disabled selected style='display:none;'>Status?</option>
+				<option value ="1">Running</option>
+				<option value ="2">Queued</option>
+				<option value ="3">On Hold</option>
+				<option value ="4">Completed</option>
 			</select>
 		</li>
 		<li>
-			<label for="qty">Quantity (optional)</label>
-			<input type="number" name="qty" placeholder="Halllo">
+			<label for="Location">Location</label>
+			<select name="Location">
+				<option value ="" disabled selected style='display:none;'>Location?</option>
+				<option value ="1">5th Floor</option>
+				<option value ="2">5th Floor (Swiss-Turn)</option>
+				<option value ="3">15th Floor</option>
+				<option value ="4">15th Floor (EDM)</option>
+			</select>
+		</li>
+		<li>
+			<label for="WO">Work Order</label>
+			<input type="number" name="WO" placeholder="Halllo">
+		</li>
+		<li>
+			<label for="P/N">Part Number</label>
+			<input type="text" name="P/N" placeholder="Halllo">
+		</li>
+		<li>
+			<label for="Description">Description</label>
+			<input type="text" name="Description" placeholder="Halllo">
+		</li>
+		<li>
+			<label for="Quantity">Quantity</label>
+			<input type="number" name="Quantity" placeholder="Halllo">
 		</li>
 		<li>
 			<label for="start_time_manual">Start Date/Time</label>
@@ -157,8 +167,8 @@ include "resources/init.php";
 			<input type="datetime-local" name="stop_time_manual">
 		</li>
 		<li>
-			<label for="notes">Notes (optional)</label>
-			<input type="text" name="notes" placeholder="Halllo">
+			<label for="Comment">Comments (optional)</label>
+			<input type="text" name="Comment" placeholder="Halllo">
 		</li>
 	</ul>
 
@@ -171,6 +181,6 @@ include "resources/init.php";
 if (isset($_POST)){
 	
 	
-	insert_in_table('WO_ops', $_POST);
+	insert_in_table('jarvik_heart', $_POST);
 	
 }

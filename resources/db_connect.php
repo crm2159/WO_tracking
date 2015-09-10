@@ -3,7 +3,7 @@
 $servername= "localhost";
 $username = "root";
 $password = "";
-$db = "machine_shop_jobs";
+$db = "jarvik_heart";
 
 try {
 	$dbh = new PDO("mysql:host=$servername;dbname=$db", $username, $password);
