@@ -18,7 +18,7 @@ include "resources/init.php";
 <br>
 <div id="tabs">
 <ul>
-	<li><a href="#tabs-1">Regular Entry</a></li>
+	<li><a href="#tabs-1" font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif>Regular Entry</a></li>
 	<li><a href="#tabs-2">Manual Entry</a></li>
 	<li><a href="#tabs-3">Machine Shop WO Entry</a></li>
 </ul>
@@ -123,64 +123,47 @@ include "resources/init.php";
 <ul>
 	<h3>Enter WO information</h3>
 		<li>
+			<label for="WO">Work Order</label>
+			<input type="number" name="WO" placeholder="WO Number">
+		</li>
+		<li>
 			<label for="Status">Status</label>
 			<select name="Status">
 				<option value ="" disabled selected style='display:none;'>Status?</option>
-				<option value ="1">Running</option>
-				<option value ="2">Queued</option>
-				<option value ="3">On Hold</option>
-				<option value ="4">Completed</option>
+				<option value ="Running">Running</option>
+				<option value ="Queued">Queued</option>
+				<option value ="On Hold">On Hold</option>
+				<option value ="Completed">Completed</option>
 			</select>
-		</li>
-		<li>
-			<label for="Location">Location</label>
-			<select name="Location">
-				<option value ="" disabled selected style='display:none;'>Location?</option>
-				<option value ="1">5th Floor</option>
-				<option value ="2">5th Floor (Swiss-Turn)</option>
-				<option value ="3">15th Floor</option>
-				<option value ="4">15th Floor (EDM)</option>
-			</select>
-		</li>
-		<li>
-			<label for="WO">Work Order</label>
-			<input type="number" name="WO" placeholder="Halllo">
 		</li>
 		<li>
 			<label for="P/N">Part Number</label>
-			<input type="text" name="P/N" placeholder="Halllo">
+			<input type="text" name="P/N" placeholder="P/N">
 		</li>
 		<li>
 			<label for="Description">Description</label>
-			<input type="text" name="Description" placeholder="Halllo">
+			<input type="text" name="Description" placeholder="Description">
 		</li>
 		<li>
 			<label for="Quantity">Quantity</label>
-			<input type="number" name="Quantity" placeholder="Halllo">
+			<input type="number" name="Quantity" placeholder="Qty">
 		</li>
 		<li>
-			<label for="start_time_manual">Start Date/Time</label>
-			<input type="datetime-local" name="start_time_manual">
-		</li>
-		<li>
-			<label for="stop_time_manual">Stop Date/Time</label>
-			<input type="datetime-local" name="stop_time_manual">
-		</li>
-		<li>
-			<label for="Comment">Comments (optional)</label>
-			<input type="text" name="Comment" placeholder="Halllo">
+			<label for="Comment">Notes (optional)</label>
+			<input type="text" name="Comment" placeholder="Comments?">
 		</li>
 	</ul>
+	
 
-	<input type="submit" value="SUBMIT" style="margin-left:200px">
-
+	<input type="submit" value="SUBMIT" style="margin-left:450px">
+	
 </form>
 </div>
+
 
 <?php
 if (isset($_POST)){
 	
-	
-	insert_in_table('jarvik_heart', $_POST);
+	insert_in_table('active_jobs', $_POST);
 	
 }
