@@ -17,12 +17,15 @@ include "resources/init.php";
 
 <br>
 <div id="tabs">
+
 <ul>
-	<li><a href="#tabs-1" font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif>Regular Entry</a></li>
+	<li><a href="#tabs-1">Regular Entry</a></li>
 	<li><a href="#tabs-2">Manual Entry</a></li>
 	<li><a href="#tabs-3">Machine Shop WO Entry</a></li>
 </ul>
+
 <div id="tabs-1">
+
 <form method="post">
 	<ul>
 		<li>
@@ -49,8 +52,8 @@ include "resources/init.php";
 		</li>
 		<li style="margin-left:200px">			
 			<div name="startstop" style="width:200px">
-				<input type="radio" name="start_stop" value = "start">    Start<br>
-				<input type="radio" name="start_stop" value = "stop">    Stop<br>
+				<input type="radio" name="start_stop" value = "start">     Start<br>
+				<input type="radio" name="start_stop" value = "stop">     Stop<br>
 			</div>
 		</li>
 		<li>
@@ -59,18 +62,15 @@ include "resources/init.php";
 		</li>
 	</ul>
 	
-	<input type="submit" value="SUBMIT" style="margin-left:200px">
+	<input type="submit" value="SUBMIT" style="margin-left:450px">
 </form>
 </div>
 
-
 <div id="tabs-2">
-
 
 <form method="post">
 
 	<ul>
-	<h3>If you've forgotten to punch-in and/or out, fill out the info below</h3>
 		<li>
 			<label for="WO_num">Work Order</label>
 			<input type="number" name="WO_num" placeholder="Halllo">
@@ -111,7 +111,7 @@ include "resources/init.php";
 		</li>
 	</ul>
 
-	<input type="submit" value="SUBMIT" style="margin-left:200px">
+	<input type="submit" value="SUBMIT" style="margin-left:450px">
 
 </form>
 </div>
@@ -121,7 +121,6 @@ include "resources/init.php";
 <form method="post">
 
 <ul>
-	<h3>Enter WO information</h3>
 		<li>
 			<label for="WO">Work Order</label>
 			<input type="number" name="WO" placeholder="WO Number">
@@ -152,7 +151,7 @@ include "resources/init.php";
 			<label for="Comment">Notes (optional)</label>
 			<input type="text" name="Comment" placeholder="Comments?">
 		</li>
-	</ul>
+</ul>
 	
 
 	<input type="submit" value="SUBMIT" style="margin-left:450px">

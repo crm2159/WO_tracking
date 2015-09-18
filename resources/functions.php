@@ -118,7 +118,6 @@ function insert_in_table($table, $assoc_array){
 	$stmt = $dbh->prepare("INSERT INTO `$table` ($columns) VALUES ($val_placeholders)");
 	foreach($assoc_array as $k=>$v){
 		$stmt->bindValue($k,$v);
-		
 	}
 	$stmt->execute();
 	return $dbh->lastInsertId();

@@ -1,6 +1,5 @@
 ul{
 	list-style-type:none;
-
 }
 
 }table {
@@ -9,10 +8,6 @@ ul{
 }
 label{
 	width:200px;
-}
-
-.ui-autocomplete {
-    z-index: 5000;
 }
 
 h1 {
@@ -31,16 +26,29 @@ h3 {
 	font-size: 16pt;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
-	
+	font-weight: 500;	
 }
 
 li {
 	text-align: left;
-	margin-bottom: 5x;
 	padding: 2px;
+	margin-left: 200px; 
 }
 
+.ui-tabs .ui-tabs-nav {
+            text-align: center;
+    }
+
+.ui-tabs .ui-tabs-nav li {
+            float: none !important;
+            display: inline-block;
+    }
+
+input[type=radio], input.radio { 
+ float:left;
+ clear:none; 
+ margin: 2px 0 0 2px; 
+}
 
 label {
 	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
@@ -50,125 +58,16 @@ label {
 	font-weight: 500;
 }
 
-
 body {
   padding-top: 50px;
+  /*background-image: url("http://www.jarvikheart.com/peter.jpg");*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
-* {
-    font-family: arial
-}
-
-label.prefix {
-    display: inline-block;
-    text-align: right;
-    width: 50px;
-}
-
-div#display {
-    background-color: black;
-	color: white;
-	min-height: 40px;
-
-}
-
-button.remove {
-    color: #C4143D
-}
-ul {
-    list-style-type: none;
-    padding-left: 0px 
-	
-}
-
-.ui-autocomplete {
-    background: #C8CCCA;
-    color: #000000;
-    border
-        
-}
-
-textarea {
-	width: 80%;
-	height: 100px;
-	resize: none;
-	
-}
-
-div.more_info {
-display: inline
-}
-
-label.left-label{
-	width: 170px;
-	text-align:left;
-	vertical-align: top
-}
-
-label.top-label {
-	width: 200px
-}
-
-label.top-left {
-	display: block;
-}
-
-select[multiple] {
-	min-width: 175px;
-}
-
-
-.power-details  label{
-	padding-left: 15px
-}
-
-input[type=checkbox] {
-	transform: scale(1.5);
-	margin: 0px 15px
-}
-input[type=radio] {
-	transform: scale(1.5);
-}
-
-input[type=date] {
-	width: 175px
-}
-input[type=time] {
-	width: 175px
-}
-
-.help-tip {
-display:none;
-margin-bottom: 5px;
-background-color: #FFFFFF;
-margin-left: 15px
-}
-
-.help-tip > img {
-	width: 50px;
-	opacity: 1.0;
-	background: white
-}
-
-.help-tip > audio {
-width: 215px;
-
-}
-
-.help-tip > table {
-	border: 1px solid black;
-}
-
-td, th {
-	padding-left: 10px;
-	padding-right: 10px;
-	border: 1px dotted #CCCCCC
-}
-
-input, select, textarea not:input[type="number"]{
-	-ms-box-sizing:content-box;
-	-moz-box-sizing:content-box;
-	-webkit-box-sizing:content-box; 
-	box-sizing:content-box;
-	width: 200px;
+.ui-widget-content {
+	border: 0pxpx solid #aaaaaa;
+	background: transparent;
+	color: #222222;
 }
